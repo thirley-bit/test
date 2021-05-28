@@ -14,7 +14,7 @@ const test:AppRouteModule={
     {
       path:'basic',
       name:'TableBasicDemo',
-      component:() => import('/@/views/demo/form/AdvancedForm.vue'),
+      component:() => import('/@/views/demo/table/Basic.vue'),
       meta:{
         title:'引入表格',
       },

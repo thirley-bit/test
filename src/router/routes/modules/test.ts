@@ -1,6 +1,5 @@
-import type { AppRouteModule } from '/@/router/types';
+import type  { AppRouteModule } from '/@/router/types';
 import { LAYOUT } from '/@/router/constant';
-// import component from '/@/locales/lang/en/component';
 
 const test:AppRouteModule={
   path:'/test',
@@ -13,13 +12,13 @@ const test:AppRouteModule={
   },
   children:[
     {
-      path:"basic",
-    name:'TableBasicDemo',
-    component:()=>import('/@/views/demo/table/Basic.vue'),
-    meta:{
-      title:'基础表格',
+      path:'/basic',
+      name:'TableBasicDemo',
+      component:()=>import('/@/views/demo/form/AdvancedForm.vue'),
+      meta:{
+        title:'引入表格',
+      },
     },
-    }
   ],
 };
 export default test;
